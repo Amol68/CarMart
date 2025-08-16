@@ -3,6 +3,8 @@
 
 @custom-variant dark (&:is(.dark *));
 
+
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -117,4 +119,10 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@layer components{
+  .nav-item {
+  @apply font-medium  hover:scale-105 transition-all hover:text-gray-700;
+}
 }

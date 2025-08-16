@@ -1,12 +1,11 @@
-import { SignInButton } from "@clerk/clerk-react";
-import { Button } from "./components/ui/button";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
 
 const Home = () => {
   return (
-    <div>
-      <Button>
-        <SignInButton mode="modal" forceRedirectUrl="/">Sign In</SignInButton>
-      </Button>
+    <div className="">
+      <Header />
+      <Hero />
     </div>
   );
 };
