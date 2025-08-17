@@ -13,3 +13,14 @@ export type Category = {
   name: string;
   icon: string;
 };
+
+export type Vehicle = {
+  name: string;
+  fuelType: string;
+  model: string;
+  type: string;
+  image: string;
+  miles: number;
+  gearType: "Automatic" | "Manual";
+  amount: string;
+};
