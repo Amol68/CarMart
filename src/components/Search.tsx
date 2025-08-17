@@ -10,7 +10,7 @@ import { Separator } from "./ui/separator";
 import { CiSearch } from "react-icons/ci";
 const Search = () => {
   return (
-    <div className="px-5 py-4  items-center border bg-gray-200 flex-col md:flex md:flex-row gap-2 rounded-full md:rounded-lg md:w-[60%]">
+    <div className="px-5 py-4  items-center border bg-gray-200 flex-col md:flex md:flex-row gap-2 rounded-md md:rounded-lg md:w-[60%]">
       {/* select 1 */}
       <Select>
         <SelectTrigger className="w-[180px] outline:none md:border-none ">
