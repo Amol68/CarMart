@@ -1,6 +1,7 @@
 import { UserButton, useUser } from "@clerk/clerk-react";
 import LogoIcon from "./LogoIcon";
 import { Button } from "./ui/button";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const navLinks = [
@@ -9,7 +10,7 @@ const Header = () => {
     { name: "New", path: "/new" },
     { name: "PreOwned", path: "/preowned" },
   ];
-  const {  isSignedIn } = useUser();
+  const { isSignedIn } = useUser();
   return (
     <div className="flex justify-between items-center shadow-xl p-3 bg-(--color-primary-foreground) ">
       <LogoIcon width={50} height={50} color="#111" />
@@ -17,10 +18,7 @@ const Header = () => {
       <nav>
         <ul className="md:flex hidden gap-16">
           {navLinks.map((link, index) => (
-            <li
-              className="nav-item"
-              key={index}
-            >
+            <li className="nav-item" key={index}>
               <a href={link?.path}>{link?.name}</a>
             </li>
           ))}
@@ -30,10 +28,13 @@ const Header = () => {
       {isSignedIn ? (
         <div>
           <UserButton />
-          <Button>Submit Button</Button>
+          <Link to={"/profile"}>
+           <Button>Submit Buttonnn</Button>
+          </Link>
+          
         </div>
       ) : (
-        <Button>Submit Button</Button>
+        <Button>Submit Buttonnn</Button>
       )}
     </div>
   );

@@ -1,16 +1,17 @@
 import Category from "./components/Category";
-import Header from "./components/Header";
+//import Header from "./components/Header";
 import Hero from "./components/Hero";
+import InfoSection from "./components/InfoSection";
 import MostSearchedCar from "./components/MostSearchedCar";
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
     <div className="">
-      <Header />
       <Hero />
 
       <Category />
-      <MostSearchedCar/>
+      <MostSearchedCar />
+      <InfoSection />
     </div>
   );
 };

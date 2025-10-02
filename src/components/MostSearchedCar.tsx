@@ -12,8 +12,8 @@ const MostSearchedCar = () => {
   console.log(carList);
   return (
     <div className=" flex items-center justify-center mt-6">
-      <Carousel className="max-w-2xl ">
-        <CarouselContent>
+      <Carousel className="max-w-[700px] ">
+        <CarouselContent className="">
           {carList.map((car, index) => (
             <CarouselItem key={index} className="basis-1/3">
               <CarItem item={car} />
